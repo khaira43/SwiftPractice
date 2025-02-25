@@ -1,0 +1,13 @@
+import Cocoa
+
+let number = 0.1 + 0.2
+print(number)
+
+//swift considers floats as doubles. swift allocates twice amount of storage as older languages
+//swift also wont let u mix floats and integers - type safety
+
+let a = 1
+let b = 2.0
+let c = Double(a) + b
+
+//also a constant or variable can always only hold one data type.

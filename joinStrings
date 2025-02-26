@@ -1,0 +1,25 @@
+import Cocoa
+
+let firstPart = "Hello, "
+let secondPart = "world!"
+let greeting = firstPart + secondPart
+
+let people = "Haters"
+let action = "hate"
+let lyric = people + " gonna " + action //operator overloadinh + can do different things.
+let luggageCode = "1" + "2" + "3" + "4" + "5" //swift uses temp strings here
+
+let quote = "Then he tapped a sign saying \"Believe\" and walked away."
+
+let name = "Pavneet"
+let age = 26
+let message = "Hello, my name is \(name) and I'm \(age) years old."
+print(message)
+print(lyric)
+//you cant use + to add integers to strings tho unless in comments but can do this
+let number = 11
+let missionMessage = "Apollo " + String(number)
+//or
+let missionMessage1 = "Apollo \(number)"
+//can also do
+print("5 X 5 is \(5 * 5)")

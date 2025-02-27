@@ -1,0 +1,10 @@
+import Cocoa
+
+
+
+var people = Set<String>()
+people.insert("Denzel Washington")
+people.insert("Tom Cruise")
+people.insert("Nicolas Cage")
+people.insert("Samuel L Jackson")
+//sets are unordered and have unique values easier to locate items.

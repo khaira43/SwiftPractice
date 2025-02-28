@@ -1,0 +1,6 @@
+import Cocoa
+
+var checkpoint = ["Pavneet", "Harveer","Harveer"]
+print(checkpoint.count)
+var setC = Set(checkpoint)
+print(setC.count)

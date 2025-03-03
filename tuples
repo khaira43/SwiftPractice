@@ -1,0 +1,12 @@
+import Cocoa
+
+func getUser() -> (firstName: String, lastName: String) {
+    (firstName: "Taylor", lastName: "Swift")
+}
+
+let (firstName, lastName) = getUser()
+print("Name: \(firstName) \(lastName)")
+//tuples have fixed sizes
+//dicts may not have values for some keys
+//tuples are filled
+//can use _ to ignore parts of tuple returned.

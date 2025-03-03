@@ -1,0 +1,14 @@
+import Cocoa
+
+func rollDice() -> Int {
+    Int.random(in: 1...6)
+}
+
+func areLettersIdentical(string1: String, string2: String) -> Bool {
+    string1.sorted() == string2.sorted()
+}
+func pythagoras(a: Double, b: Double) -> Double {
+    sqrt(a * a + b * b)
+}
+
+//can use return to force function to exit.

@@ -1,0 +1,38 @@
+import Cocoa
+
+enum SqrtError: Error {
+    case outOfBounds
+    case noRoot
+}
+
+
+func checkPassword(number: Int) throws -> Int {
+    if number < 1 || number > 10000 {
+        throw SqrtError.outOfBounds
+    }
+    else {
+        for i in 1...100 {
+            if i*i == number {
+                return i
+            }
+            if i*i != number && i == 100 {
+                throw SqrtError.noRoot
+            }
+        }
+        
+    }
+    return 0
+    
+    
+    
+}
+
+do {
+    let result = try checkPassword(number: 100000)
+    print(result)
+} catch SqrtError.outOfBounds {
+    print("Out of Bounds")
+} catch SqrtError.noRoot {
+    print("No Root")
+}
+    

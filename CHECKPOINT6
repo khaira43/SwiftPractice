@@ -1,0 +1,23 @@
+import Cocoa
+
+
+struct Car {
+    let model: String
+    let seats: Int
+    private var gear = 1
+    
+    init(model: String, seats: Int, gear: Int){
+        self.model = model
+        self.seats = seats
+        self.gear = gear
+    }
+
+    mutating func changeGear(direction: String){
+        if direction == "Up" && gear < 10{
+            gear += 1
+        } else if direction == "Down" && gear > 1{
+            gear -= 1
+        }
+    }
+}
+var car = Car(model: "Nissan", seats: 6, gear: 2)

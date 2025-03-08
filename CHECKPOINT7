@@ -1,0 +1,49 @@
+import Cocoa
+
+
+class Animal {
+    var legs: Int
+    
+    init(legs: Int) {
+        self.legs = legs
+    }
+}
+
+class Dog: Animal {
+    func speak() {
+        
+    }
+    
+}
+
+class Cat: Animal {
+    var isTame: Bool
+    init(legs: Int, isTame: Bool){
+        self.isTame = isTame
+        super.init(legs: legs)
+    }
+    
+    
+}
+
+class Corgi: Dog {
+    override func speak() {
+        print("Woof")
+    }
+    
+}
+
+class Poodle: Dog {
+    override func speak() {
+        print("Wooooof")
+    }
+    
+}
+
+class Persian: Cat {
+    
+}
+
+class Lion: Cat {
+    
+}

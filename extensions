@@ -1,0 +1,32 @@
+import Cocoa
+
+
+var quote = "   The truth is rarely pure and never simple   "
+
+extension String {
+    func trimmed() -> String {
+        self.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+}
+
+let trimmed = quote.trimmed()
+
+struct Book {
+    let title: String
+    let pageCount: Int
+    let readingHours: Int
+
+    init(title: String, pageCount: Int) {
+        self.title = title
+        self.pageCount = pageCount
+        self.readingHours = pageCount / 50
+    }
+}
+
+extension Book {
+    init(title: String, pageCount: Int) {
+        self.title = title
+        self.pageCount = pageCount
+        self.readingHours = pageCount / 50
+    }
+}

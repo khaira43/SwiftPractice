@@ -1,0 +1,4 @@
+import Cocoa
+
+func random(arr: [Int]?) -> Int { arr?.randomElement() ?? Int.random(in: 1...100)}
+    
